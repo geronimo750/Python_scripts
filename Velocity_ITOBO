@@ -1,0 +1,33 @@
+import sys
+import numpy as np
+import scipy as sci
+import matplotlib
+
+
+# Gas law
+def rho(T):
+    result=0
+    R=287
+    P0=101325.
+    result=P0/(R*T)
+    return result
+    
+
+nb=raw_input('insert velocity:')
+Vel = float(nb)
+#except ValueError:
+#print("Invalid number")
+print ('Number %s \n' % (Vel))
+
+Velx=np.sin(np.pi*15.0/180.0)*Vel
+Velz=np.cos(np.pi*15.0/180.0)*Vel
+
+Area=0.12*0.8
+
+rr=rho(18+273.15)
+mdot=rr*Area*Vel
+
+print ('velx %s \n' %(Velx))
+print ('velz %s \n' %(Velz))
+print ('mdot %s \n' %(mdot))
+
