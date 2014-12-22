@@ -8,15 +8,26 @@ from StringIO import StringIO
 #ntot=np.fromfile('/Users/marcogeron/Copy/Base_Flow_Project/Test/cazzo.dat',dtype=np.int,count=1) 
 # this format is not usable because is valid only for binary file.
 f=open('/Users/marcogeron/Copy/Base_Flow_Project/Test/Nozzle_Medium.p3d')
-ntot = []
+
+#read blocs
+line=f.readline()
+line = line.strip("\n")
+bloc=int(line)
+
+
+#read number of lements for each bloc
+ntot = np.zeros([bloc,3])
+for b in bloc
+
 line=f.readline()
 
 #while line:
 line = line.strip("\n")
 line = line.split()
 #ntot.append([])
-for item in line:
-        ntot.append(int(item))
+
+for dim in range 1:
+        ntot[b,dim]=line[dim]
     #line = f.readline()
     #index += 1
 
@@ -35,13 +46,24 @@ totE=ntota[0]*ntota[1]
 xvec=np.zeros(totE)
 yvec=np.zeros(totE)
 zvec=np.zeros(totE)
-my_data=np.reshape(my_data, (2*totE,-1))
+my_data=np.reshape(my_data, (2*totE,-1)) #this needs to be adapted to the number of the blocks
 
 
 for i in xrange (totE-1):
     xvec[i]=my_data[i,0]
     yvec[i]=my_data[totE+i,0]
     zvec[i]=0
+    
+    
+f.open('some_name.p3d','w')    
+
+#f.write('6 \n') ... scrivi il numero deu blocchi
+f.write(ntota[0],ntota[1],ntota[2]) #ntota[2] needs to be defined
+np.savetxt(f,xvec)
+f.write('\n')
+np.savetxtx(f,yvec)
+f.write('\n')
+np.savetxtx(f,zvec)
     
 np.savetxt('cazzone',line,fmt='%s %s',delimiter=' ') 
 
