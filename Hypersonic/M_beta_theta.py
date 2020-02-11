@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from sympy import *
 #from sympy.plotting import plot_implicit, Eq
 
-from labellines import labelLine, labelLines
+#from labellines import labelLine, labelLines
 
 
 
@@ -33,8 +33,8 @@ for M in Mach :
 
 i=0
 for color in ['r', 'b', 'g', 'k', 'm','c']:
-   p[i].line_color=color
-   i +=1
+    p[i].line_color=color
+    i +=1
 
 # i=0
 # for M in Mach :
