@@ -7,10 +7,10 @@ beta = symbols('beta', positive=True, real=True)
 
 Mach = np.array( [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
 
-
+k=np.size(Mach)
 theta=10*pi/180
 
-p=np.array()
+p=np.zeros(k)
 i=0
 for M in Mach:
 #M=2
