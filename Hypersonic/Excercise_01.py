@@ -29,4 +29,4 @@ for M in Mach:
     # else:
     #     p=diff
 
-#plot(p,Mach)
+plt.plot(p,Mach)
