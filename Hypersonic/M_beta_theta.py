@@ -1,8 +1,10 @@
-# from cProfile import label
-
 import numpy as np
 import matplotlib.pyplot as plt
 from sympy import *
+
+# from cProfile import label
+
+
 #from sympy.plotting import plot_implicit, Eq
 
 #from labellines import labelLine, labelLines
