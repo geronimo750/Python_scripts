@@ -39,7 +39,7 @@ PM_sol=nu-sy.sqrt(gamr)*((sy.atan(sy.sqrt((1/gamr)*(mach**2-1)))))+((sy.atan(sy.
 solution=sy.nsolve (PM_sol, mach,2)
 print(solution)
 
-eqHy=np.deg2rad(10)-2/(gam-1)*(1/m1-1/mach)
-solHy=sy.solveset(eqHy,mach)
-print(solHy)
-err=(solution-solHy)/solution
+# eqHy=np.deg2rad(10)-2/(gam-1)*(1/m1-1/mach)
+# solHy=sy.solveset(eqHy,mach)
+# print(solHy)
+# err=(solution-solHy)/solution
