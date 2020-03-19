@@ -26,9 +26,18 @@ xi=Minf**3*Croot/sp.sqrt(rhoinf*(Minf*ainf)*x/muinf)
 
 sol=sp.solve(xi-3)
 print(sol)
+
+
+
 ps=1+0.15*xi
 pd=1+0.078*xi
-sp.plot(xi,(x,0.5,5))
-sp.plot(pd,(x,0.5,5))
+
+#fig=plt.figure()
+#ax = fig.add_subplot(1, 1, 1)
+#ax.spines['left'].set_position(('data', 0))
+# ax=fig.axes
+# sp.plot(xi,(x,0.5,5))
+sp.plot(ps,(x,0.5,8), axis_center=(0,0),xlim=(0,5),ylim=(0,50))
+
 
 

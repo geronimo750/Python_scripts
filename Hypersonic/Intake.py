@@ -18,4 +18,12 @@ gam=1.4
 
 p2p1=1+2*gam/(gam+1)*(Mn**2-1)
 
-cp=2/(gam*M**2)*(p2p1-1)
+pic=(((gam+1)*Mn**2)/((gam-1)*Mn**2+2))**(gam/(gam-1))*((gam+1)/(2*gam*Mn**2-gam+1))**(1/(gam-1))
+
+psi=(1+2*gam/(gam+1)*(Mn**2-1))*(2+(gam-1)*Mn**2)/((gam+1)*Mn**2)
+
+etac=(psi-(1/pic)**((gam-1)/gam))/(psi-1)
+
+print(etac)
+
+
