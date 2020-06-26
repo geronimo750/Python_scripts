@@ -1,3 +1,8 @@
+#Series of functions to evaluate isentropic relationships.
+#At the moment gamma=Cp/Cv=1.4;
+#Each function allows to evaluate Mach number or the ratio (var/var_0) between variable
+#put 0 in the variable you need to evaluate
+
 def ise_p (p_p0,M):
 #    p_p0=(1+delta*Mach**2)**(-gam/(gam-1))
     import numpy as np
@@ -54,7 +59,7 @@ def ise_T (T_T0,M):
         return M
     elif T_T0==0 and M!=0:
         Mach=M
-        T_T0=(1+delta*Mach**2)**(-1/(gam-1))
+        T_T0=(1+delta*Mach**2)**(-1)
         return T_T0
     else :
         print ("wrong input")
