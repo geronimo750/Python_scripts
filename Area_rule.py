@@ -10,15 +10,15 @@ def A_rule (mdot,A,M,Pt,Tt):
 
     if mdot!=0 and M==0 and A!=0:
         Mach = sy.Symbol('Mach', positive=True, real=True)
-        eq=mdot-A*Mach*Pt*sy.sqrt(gam/R*Tt)*(1+delta*Mach**2)**((gam+1)/(-2*(gam-1)))
+        eq=mdot-A*Mach*Pt*sy.sqrt(gam/R/Tt)*(1+delta*Mach**2)**((gam+1)/(-2*(gam-1)))
         M=sy.nsolve(eq,Mach,0.2)
         return M
     elif mdot==0 and M!=0 and A!=0:
-        mdot=A*Pt*M*sy.sqrt(gam/R*Tt)*(1+delta*M**2)**((gam+1)/(-2*(gam-1)))
+        mdot=A*Pt*M*sy.sqrt(gam/R/Tt)*(1+delta*M**2)**((gam+1)/(-2*(gam-1)))
         return mdot
     elif mdot!=0 and M!=0 and A==0:
         Area=sy.Symbol ('Area', positive = True, real = True)
-        eq=mdot-Area*M*Pt*sy.sqrt(gam/R*Tt)*(1+delta*M**2)**((gam+1)/(-2*(gam-1)))
+        eq=mdot-Area*M*Pt*sy.sqrt(gam/R/Tt)*(1+delta*M**2)**((gam+1)/(-2*(gam-1)))
         A=sy.nsolve (eq,Area,1)
         return A
     else:
