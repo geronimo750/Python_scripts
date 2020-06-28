@@ -36,8 +36,6 @@ Ttn=Te/ise_T(0,Me)
 rhotn=rhoe/ise_rho(0,Me)
 
 
-
-
 # inlet conditions
 Ai=np.pi*(152.4e-3)**2
 Mi=A_rule(mdotn,Ai,0,Ptn,Ttn)
@@ -46,4 +44,16 @@ rhoi=rhotn*ise_rho(0,Mi)
 Ti=float(Ttn*ise_T(0,Mi))
 Ui=Mi*np.sqrt(gam*R*Ti)
 
-print ('Nozzle inlet conditions. Ui=',Ui,'rho_e=',rhoi)
+print ('Nozzle inlet conditions. Ui=',Ui,'rho_i=',rhoi)
+
+#Plenum
+Ap=0.0125
+#BP1 
+mdotp=0.0081
+Pp=109.7e3
+Tp=Ta+34
+rhop=ideal_gas(Pp,0,Tp)
+Up=mdotp/rhop/Ap
+
+print ('Plenum inlet conditions. Up=',Up,'rho_p=',rhop)
+mdotp=0.0162   #BP2
