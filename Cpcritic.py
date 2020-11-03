@@ -36,10 +36,4 @@ p[1].line_color='red'
 p[1].label='$C_{p_{crit}}$'
 
 
-
-
 p.show()
-# plot1.show()
-
-# problem with legend (not showing label legend)
-# use matplot lib
