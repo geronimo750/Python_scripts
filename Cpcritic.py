@@ -30,9 +30,9 @@ plot2=sy.plot(-Cpcr,(Mach,0.3,0.9), show=False)#, label='Cp_cr', show=False, leg
 plot1.append(plot2[0])
 
 p=plot1
-p[0].line_color='red'
+p[0].line_color='blue'
 p[0].label ='$C_{p_{comp}}$'
-p[1].line_color='blue'
+p[1].line_color='red'
 p[1].label='$C_{p_{crit}}$'
 
 
@@ -43,7 +43,3 @@ p.show()
 
 # problem with legend (not showing label legend)
 # use matplot lib
-
-
-
-
