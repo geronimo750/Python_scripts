@@ -6,7 +6,7 @@ from Area_rule import *
 from Ideal_gas import *
 
 # This programme will evaluate BC for the specific case of PAW05, however
-# it is expected to develop some functions that can be used for supersoni flow
+# it is expected to develop some functions that can be used for supersonic flow
 # isentropic relationships as well as shock relationships
 
 gam=1.4
@@ -17,7 +17,7 @@ Pa=99e3
 Ta=300
 rhoa=ideal_gas(Pa,0,Ta)
 
-#Plenum conditions
+#Nozzle
 
 # outlet conditions
 Te=2.7*Ta
