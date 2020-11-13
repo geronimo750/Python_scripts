@@ -20,7 +20,8 @@ rhoa=ideal_gas(Pa,0,Ta)
 #Nozzle
 
 # outlet conditions
-Te=2.7*Ta
+TR=2.7
+Te=TR*Ta
 Pe=Pa
 Ae=(68.07e-3)**2
 Me=0.304
@@ -63,4 +64,5 @@ Ptp=Pp/ise_p(0,Mp)
 Ttp=Tp/ise_T(0,Mp)
 
 print ('Plenum Total Conditions : Ttp=',Ttp,'Ptp=',Ptp)
+
 #mdotp=0.0162   #BP2
