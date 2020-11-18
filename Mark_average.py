@@ -57,7 +57,8 @@ Mscale=Mscalef(module["mark"],68)
 Connor=Conscalef(module["mark"],0.1)
 # Mscale=Mscalef
 # 
-Scaled_module=pd.DataFrame([module["mark"],crude,Mscale,Connor],["Original","crude","Mscale","Connor"],dtype='float64')
+Scaled_module=pd.DataFrame([module["mark"],crude,Mscale,Connor],
+                           ["Original","crude","Mscale","Connor"],dtype='float64')
 Scaled_module=Scaled_module.T
 # create a DataSet in which each column is a different approach
 
@@ -68,16 +69,15 @@ Scaled_module.hist(edgecolor='black',color='green',range=(0,100),bins=int(100/10
 # plt.axex
 # plt.hist(new_module, edgecolor='black',range=(0,100),bins=int(100/10))
 
-fig, axs = plt.subplots(2,2)
-axs[0,0].set(xlabel=('pincopallo'))
-# plt.subplot(221)
-# plt.subplot(0,0)
+fig, axs = plt.subplots(2,2,figsize=(15,16))
+axs[0,0].set(xlabel=('marks bin'))
 axs[0,0].hist([Scaled_module["Original"],Scaled_module["crude"]],range=(0,100),bins=int(100/10),alpha=0.5)
 
 # plt.subplot(222)
-plt.hist([Scaled_module["Original"],Scaled_module["Mscale"]],range=(0,100),bins=int(100/10),alpha=0.5)
-# plt.title('$Prova M_\infty$')
-
+axs[0,1].hist([Scaled_module["Original"],Scaled_module["Mscale"]],
+                  range=(0,100),bins=int(100/10),alpha=0.5)
+axs[0,1].set(title=('$Prova M_\infty$'))
+axs[0,1].set(xlabel=('marks bin'))
 
 plt.show()
 

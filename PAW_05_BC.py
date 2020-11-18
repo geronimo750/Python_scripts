@@ -17,21 +17,38 @@ Pa=99e3
 Ta=300
 rhoa=ideal_gas(Pa,0,Ta)
 
-#Nozzle
+# Nozzle
+#set point 23
+# TR=1.765   #input data
+# NPR=1.103
+# Me=0.376
+# BR
+    #BR=0.5 
+mdotp=0.0062 #input
+Pp=105.1e3   #input
+Tp=Ta+14     #input
+
+#set point 42
+# TR=2.7 
+# NPR=1.066
+# Me=0.304
+# BR
+
+
+
 
 # outlet conditions
-TR=2.7
+
 Te=TR*Ta
 Pe=Pa
 Ae=(68.07e-3)**2
-Me=0.304
 rhoe=ideal_gas(Pe,0,Te)
 Ue=Me*np.sqrt(gam*R*Te)
 
 print ('Nozzle outlet conditions. Ue=',Ue,'rho_e=',rhoe)
 
 #Nozzle conditions
-mdotn=0.34
+
 Ptn=Pa/ise_p(0,Me)
 Ttn=Te/ise_T(0,Me)
 rhotn=rhoe/ise_rho(0,Me)
@@ -50,10 +67,7 @@ print ('Nozzle inlet conditions. Ui=',Ui,'rho_i=',rhoi)
 
 #Plenum
 Ap=0.0125
-#BP1 
-mdotp=0.0081
-Pp=109.7e3
-Tp=Ta+34
+
 rhop=ideal_gas(Pp,0,Tp)
 Up=mdotp/rhop/Ap
 
