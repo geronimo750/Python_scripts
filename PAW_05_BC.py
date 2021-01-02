@@ -18,25 +18,46 @@ Ta=300
 rhoa=ideal_gas(Pa,0,Ta)
 
 # Nozzle
-#set point 23
+#_____________________________________________set point 23___________________________
 # TR=1.765   #input data
 # NPR=1.103
 # Me=0.376
+# mdotn=0.53
+
 # BR
     #BR=0.5 
-mdotp=0.0062 #input
-Pp=105.1e3   #input
-Tp=Ta+14     #input
+# mdotac=0.0062 #input --> 
+# Pp=105.1e3   #input
+# Tp=Ta+14     #input
 
-#set point 42
+    # BR=2.0
+# mdotac=0.0249 #input --> 
+# Pp=161.9e3   #input
+# Tp=Ta+2.3     #input
+
+
+
+#__________________________________________set point 42______________________________
 # TR=2.7 
 # NPR=1.066
 # Me=0.304
 # BR
 
+# _________________________________________Set  point 49_________________________________
+
+TR=2.7
+NPR=1.692
+Me=0.9
+mdotn=1.02
+
+# -----------BR 0.5
+mdotac=0.0121
+Pp=123.1e3
+Tp=Ta+40
 
 
 
+#______________________________Nozzle_________________________________ 
 # outlet conditions
 
 Te=TR*Ta
@@ -65,9 +86,11 @@ Ui=Mi*np.sqrt(gam*R*Ti)
 
 print ('Nozzle inlet conditions. Ui=',Ui,'rho_i=',rhoi)
 
-#Plenum
+#__________________________________Plenum__________________________________________
 Ap=0.0125
+corr=1
 
+mdotp=mdotac*corr
 rhop=ideal_gas(Pp,0,Tp)
 Up=mdotp/rhop/Ap
 
@@ -79,4 +102,4 @@ Ttp=Tp/ise_T(0,Mp)
 
 print ('Plenum Total Conditions : Ttp=',Ttp,'Ptp=',Ptp)
 
-#mdotp=0.0162   #BP2
+
