@@ -18,11 +18,14 @@ Kd_exp=Mc_exp*np.sin(d_exp_r)
 gam=1.4
 gam2=(gam+1)/2.
 
-Kd=np.linspace(0,6)
+Kd=np.linspace(0.1,4)
 Mc=1+gam2*Kd**2*(1+np.log(gam2+1/Kd**2))
 
-plt.plot(Kd,Mc)
+fig, ax=plt.subplots(figsize=(6,6))
 
-plt.plot(Kd_exp,Mc_exp,'*')
-
+ax.set_xlabel('$K_{\delta}$')
+ax.set_ylabel('$M_c$')
+ax.plot(Kd,Mc, label='HSDT')
+ax.plot(Kd_exp,Mc_exp,'*',label='Exact Theory')
+ax.legend()
 plt.show()
