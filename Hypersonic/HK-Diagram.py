@@ -31,22 +31,25 @@ def Mach (K,H,M,gam):
 X,Y=sp.symbols('X Y')
 eq=Energy(X,Y,1)
 eq2=Energy(X,Y,1.4)
-eq3=Stream(X,Y,1.25,1.36)
-eq4=Mach(X,Y,3.5,1.36)
-eq5=Mach(X,Y,1.85,1.36)
+eq3=Stream(X,Y,1.2,1.4)
+eq4=Mach(X,Y,2.74,1.4)
+eq5=Mach(X,Y,1.32,1.4)
+eq6=Energy(X,Y,1.47)
 # sol=sp.linsolve((eq,eq3),X,Y)
 
 #fig, ax = plt.subplots(1)
 p1=sp.plot_implicit(eq,(X,0,1.6),(Y,0,1.7),line_color='Red',show=False)
 p2=sp.plot_implicit(eq3,(X,0,1.6),(Y,0,1.7),depth=2,show=False)
-# p3=sp.plot_implicit(eq2,(X,0,1.6),(Y,0,1.7),line_color='Red',linestyle='*',show=False)
+p3=sp.plot_implicit(eq2,(X,0,1.6),(Y,0,1.7),line_color='Red',linestyle='*',show=False)
 p4=sp.plot_implicit(eq4,(X,0,1.6),(Y,0,1.7),line_color='Black',show=False)
 p5=sp.plot_implicit(eq5,(X,0,1.6),(Y,0,1.7),line_color='Black',show=False)
+p6=sp.plot_implicit(eq6,(X,0,1.6),(Y,0,1.7),line_color='Red',show=False)
+
 p1.append(p2[0])
-# p1.append(p3[0])
+p1.append(p3[0])
 p1.append(p4[0])
 p1.append(p5[0])
-
+p1.append(p6[0])
 
 p1.show()
 
