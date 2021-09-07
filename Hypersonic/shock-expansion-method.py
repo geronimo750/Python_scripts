@@ -20,8 +20,8 @@ def nu_MP(Mach):
 #step one  equivalent wedge
 
 beta=symbols('beta')
-theta=np.deg2rad(37)
-M=8
+theta=np.deg2rad(18.8)
+M=10
 
 # expr=((M**2)*(sin(beta))**2-1-(1.4+1)/2*(M**2)*(sin(beta)*sin(theta))/cos(beta-theta))
 expr = Eq((M**2)*(sin(beta))**2 - 1 , (1.4 + 1) / 2 * (M**2) * (sin(beta) * sin(theta)) / cos(beta - theta))
