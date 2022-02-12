@@ -4,8 +4,8 @@ from sympy import *
 
 
 beta=symbols('beta')
-theta=np.deg2rad(18.8)
-M=10
+theta=np.deg2rad(31)
+M=3.5
 
 # expr=((M**2)*(sin(beta))**2-1-(1.4+1)/2*(M**2)*(sin(beta)*sin(theta))/cos(beta-theta))
 expr = Eq((M**2)*(sin(beta))**2 - 1 , (1.4 + 1) / 2 * (M**2) * (sin(beta) * sin(theta)) / cos(beta - theta))
