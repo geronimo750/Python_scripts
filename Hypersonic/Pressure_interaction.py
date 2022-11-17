@@ -30,8 +30,8 @@ Minf=25
 # wall conditions
 Taw=0.88*Tinf*(1+0.2*Minf**2)
 
-# Twall=1200
-Twall=Taw
+Twall=1200
+#Twall=Taw
 
 muwall=mus(Twall)
 print("Mu wall=",muwall)
@@ -61,10 +61,8 @@ ps=1+0.15*Cibar
 pw=1+0.078*Cibar
 
 # adiabatic
-
-
-ps=0.514*Cibar+0.759
-pw=1+0.31*Cibar+0.05*Cibar**2
+#ps=0.514*Cibar+0.759
+#pw=1+0.31*Cibar+0.05*Cibar**2
 
 f=sp.Piecewise((ps, X>xe),(ps,X>xm))
 sp.plot(ps,(X,0.1,xmax))
