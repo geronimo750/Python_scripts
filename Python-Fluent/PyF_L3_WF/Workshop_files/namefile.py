@@ -1,6 +1,6 @@
-#delete first two lines
-#setup_for_fluent(product_version="23.1.0", mode="meshing", version="3d", precision="single")
-#meshing.execute_tui(r'''(api-start-python-journal "namefile.py")  ''')
+# delete first two lines
+# setup_for_fluent(product_version="23.1.0", mode="meshing", version="3d", precision="single")
+# meshing.execute_tui(r'''(api-start-python-journal "namefile.py")  ''')
 
 #add 4 new lines
 import ansys.fluent.core as pyfluent
@@ -33,17 +33,17 @@ solver.setup.models.energy = {"enabled" : True}
 #THIS WORKS!!!!!!!!!!
 #solver.setup.materials.database.copy_by_name(type="fluid", name="water-liquid")
 
-#the execute_tui command does not seem to work anymore
-#solver.execute_tui(r'''/define/materials/copy fluid water-liquid ''') 
+# the execute_tui command does not seem to work anymore
+# solver.execute_tui(r'''/define/materials/copy fluid water-liquid ''') 
 
-#suggested by fluent but not working
-#solver.tui.define.materials.copy("fluid","water-liquid")
+# suggested by fluent but not working
+# solver.tui.define.materials.copy("fluid","water-liquid")
 
-#solver.setup.cell_zone_conditions.fluid['fluid'] = {"material" : "water-liquid"}
-#solver.setup.boundary_conditions.velocity_inlet['velocity-inlet-1'].vmag = 1.
-#solver.setup.boundary_conditions.velocity_inlet['velocity-inlet-2'].vmag = 1.
-#solver.solution.initialization.hybrid_initialize()
-#solver.solution.run_calculation.iterate(iter_count = 1000)
-#solver.solution.run_calculation.iterate(iter_count = 20)
-#solver.exit()
+# solver.setup.cell_zone_conditions.fluid['fluid'] = {"material" : "water-liquid"}
+# solver.setup.boundary_conditions.velocity_inlet['velocity-inlet-1'].vmag = 1.
+# solver.setup.boundary_conditions.velocity_inlet['velocity-inlet-2'].vmag = 1.
+# solver.solution.initialization.hybrid_initialize()
+# solver.solution.run_calculation.iterate(iter_count = 1000)
+# solver.solution.run_calculation.iterate(iter_count = 20)
+# solver.exit()
 
