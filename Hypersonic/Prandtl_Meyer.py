@@ -43,3 +43,5 @@ print(solution)
 # solHy=sy.solveset(eqHy,mach)
 # print(solHy)
 # err=(solution-solHy)/solution
+
+
