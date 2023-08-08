@@ -1,0 +1,5 @@
+2023-06-30 14:43:19,007 ansys.fluent.networking DEBUG    Can use 127.0.0.1 as remoting ip
+2023-06-30 14:43:29,127 ansys.fluent.networking DEBUG    GRPC_TRACE: rpc = /grpc.health.v1.Health/Check, request = {}
+2023-06-30 14:43:29,130 ansys.fluent.networking DEBUG    GRPC_TRACE: response = {'status': 'SERVING'}
+2023-06-30 14:43:29,133 ansys.fluent.networking DEBUG    GRPC_TRACE: rpc = /grpcRemoting.SchemeEval/StringEval, request = {'input': '(cx-version)'}
+2023-06-30 14:43:42,011 ansys.fluent.networking DEBUG    GRPC_TRACE: rpc = /grpcRemoting.DataModel/executeCommand, request = {'rules': 'workflow', 'command': 'InitializeWorkflow', 'wait': True, 'args': {'variantMapState': {'item': {'WorkflowType': {'stringState': 'Watertight Geometry'}}}}}

@@ -1,0 +1,11 @@
+2023-06-30 14:43:18,960 ansys.fluent.launcher INFO     Launching Fluent with cmd: C:\Program Files\ANSYS Inc\v231\fluent\ntbin\win64\fluent.exe 3ddp -t2 -meshing  -sifile="C:\Users\geron-ma\AppData\Local\Temp\serverinfo-2u6dvbcw.txt" -nm
+2023-06-30 14:43:20,032 ansys.fluent.launcher INFO     Waiting for Fluent to launch...99 seconds remaining
+2023-06-30 14:43:21,046 ansys.fluent.launcher INFO     Waiting for Fluent to launch...98 seconds remaining
+2023-06-30 14:43:22,061 ansys.fluent.launcher INFO     Waiting for Fluent to launch...97 seconds remaining
+2023-06-30 14:43:23,069 ansys.fluent.launcher INFO     Waiting for Fluent to launch...96 seconds remaining
+2023-06-30 14:43:24,078 ansys.fluent.launcher INFO     Waiting for Fluent to launch...95 seconds remaining
+2023-06-30 14:43:25,087 ansys.fluent.launcher INFO     Waiting for Fluent to launch...94 seconds remaining
+2023-06-30 14:43:26,089 ansys.fluent.launcher INFO     Waiting for Fluent to launch...93 seconds remaining
+2023-06-30 14:43:27,104 ansys.fluent.launcher INFO     Waiting for Fluent to launch...92 seconds remaining
+2023-06-30 14:43:28,110 ansys.fluent.launcher INFO     Waiting for Fluent to launch...91 seconds remaining
+2023-06-30 14:43:29,125 ansys.fluent.launcher INFO     Fluent process is successfully launched.
