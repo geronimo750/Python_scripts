@@ -1,4 +1,4 @@
-windvelocity="3ms"
+windvelocity="6ms"
 print("wind velocity is " + windvelocity)
 
 #watermark off
@@ -29,64 +29,12 @@ ensight.view_transf.view_from_triad_axis("+x")
 #view
 ensight.part.select_begin(20)
 ensight.part.visible("ON")
-#this needs to be adjusted according to the domain and the zoom required
-#Cold  flare
-ensight.view_transf.look_at(0,65,75)
-ensight.view_transf.look_from(0,65,360)
-#Sandy warm flare
-ensight.view_transf.look_at(128,38,174)
-ensight.view_transf.look_from(128,38,348)
-#LP flare
-ensight.view_transf.look_at(56,14,74)
-ensight.view_transf.look_from(56,14,145)
-#
-#ensight.view_transf.center_of_transform(0,75,75)
-#ensight.view_transf.zclip_front(34.8149109)
+ensight.view_transf.look_at(-5,65,75)
+ensight.view_transf.look_from(-5,65,360)
+ensight.view_transf.center_of_transform(0,75,75)
+ensight.view_transf.zclip_front(34.8149109)
 ensight.tools.select_tool("OFF")
 ensight.annotation.axis_model("OFF")
-
-# writing part
-ensight.text.rgb(1,1,1)
-ensight.text.new_text("Wind")
-ensight.text.select_begin(0)
-ensight.text.visible("OFF")
-#ensight.text.location_x(0.9)
-#ensight.text.location_y(0.9)
-
-#
-ensight.line.select_default()
-ensight.line.label_text_id(0)
-ensight.line.new_line()
-ensight.line.arrowhead("on_second_end")
-ensight.line.select_begin(0)
-ensight.line.rgb(1,1,1)
-ensight.line.width(3)
-ensight.line.location_x_1(0.95)
-ensight.line.location_y_1(0.9)
-ensight.line.location_x_2(0.8)
-ensight.line.location_y_2(0.9)
-
-ensight.text.new_text("HP tip")
-ensight.text.select_begin(1)
-ensight.text.size(40)
-ensight.text.visible("OFF")
-
-ensight.line.select_default()
-ensight.line.label_text_id(1)
-ensight.line.new_line()
-ensight.line.arrowhead("on_second_end")
-ensight.line.select_begin(1)
-ensight.line.rgb(1,1,1)
-ensight.line.width(3)
-ensight.line.location_x_1(0.975)
-ensight.line.location_y_1(0.057)
-ensight.line.location_x_2(0.885)
-ensight.line.location_y_2(0.057)
-
-
-
-
-
 #put temperature as variable
 ensight.legend.select_palette_begin("temperature")
 ensight.legend.visible("ON")
@@ -110,17 +58,11 @@ ensight.file.image_stereo("current")
 ensight.file.image_screen_tiling(1,1)
 ensight.file.image_format_options("Compression Default")
 ensight.file.image_file(r"""C:\Users\geron-ma\OneDrive - TUV SUD\Temp\PPP\fig-temp-"""+windvelocity)
-ensight.file.image_window_size("normal")
-#ensight.file.image_window_xy(1280,985)
-ensight.file.image_raytrace_it("ON")
+ensight.file.image_window_size("user_defined")
+ensight.file.image_window_xy(1280,985)
 ensight.file.save_image()
 #
-= --------------------O2------------------------
-
-#remove vision of the flare
-ensight.part.select_begin(2,3,4,5,6)
-ensight.part.visible("OFF")
-#put o2 as variable 
+#put o2 as variable
 ensight.legend.select_palette_begin("o2")
 ensight.legend.visible("OFF")
 ensight.part.select_begin(20)
@@ -132,7 +74,7 @@ ensight.legend.select_palette_begin("o2")
 ensight.legend.visible("OFF")
 # #define range and change palette
 ensight.function.palette("o2")
-ensight.function.range(0.0,0.23)
+ensight.function.range(0.0,0.21)
 ensight.function.modify_begin()
 ensight.function.restore_predefinedpal("use_new_levels","BD_Spectral_11")
 ensight.function.modify_end()
@@ -144,7 +86,6 @@ ensight.file.image_stereo("current")
 ensight.file.image_screen_tiling(1,1)
 ensight.file.image_format_options("Compression Default")
 ensight.file.image_file(r"""C:\Users\geron-ma\OneDrive - TUV SUD\Temp\PPP\fig-"""+var+"-"+windvelocity)
-ensight.file.image_window_size("normal")
-#ensight.file.image_window_xy(1280,985)
-ensight.file.image_raytrace_it("ON")
+ensight.file.image_window_size("user_defined")
+ensight.file.image_window_xy(1280,985)
 ensight.file.save_image()

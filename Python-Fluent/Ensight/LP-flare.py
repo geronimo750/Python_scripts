@@ -34,11 +34,11 @@ ensight.part.visible("ON")
 ensight.view_transf.look_at(0,65,75)
 ensight.view_transf.look_from(0,65,360)
 #Sandy warm flare
-ensight.view_transf.look_at(128,38,174)
-ensight.view_transf.look_from(128,38,348)
+#ensight.view_transf.look_at(128,38,174)
+#ensight.view_transf.look_from(128,38,348)
 #LP flare
-ensight.view_transf.look_at(56,14,74)
-ensight.view_transf.look_from(56,14,145)
+#ensight.view_transf.look_at(66,7,74)
+#ensight.view_transf.look_from(66,7,113)
 #
 #ensight.view_transf.center_of_transform(0,75,75)
 #ensight.view_transf.zclip_front(34.8149109)
@@ -57,10 +57,10 @@ ensight.text.visible("OFF")
 ensight.line.select_default()
 ensight.line.label_text_id(0)
 ensight.line.new_line()
-ensight.line.arrowhead("on_second_end")
 ensight.line.select_begin(0)
 ensight.line.rgb(1,1,1)
 ensight.line.width(3)
+ensight.line.arrowhead("on_second_end")
 ensight.line.location_x_1(0.95)
 ensight.line.location_y_1(0.9)
 ensight.line.location_x_2(0.8)
@@ -74,14 +74,14 @@ ensight.text.visible("OFF")
 ensight.line.select_default()
 ensight.line.label_text_id(1)
 ensight.line.new_line()
-ensight.line.arrowhead("on_second_end")
 ensight.line.select_begin(1)
 ensight.line.rgb(1,1,1)
+ensight.line.arrowhead("on_second_end")
 ensight.line.width(3)
-ensight.line.location_x_1(0.975)
-ensight.line.location_y_1(0.057)
-ensight.line.location_x_2(0.885)
-ensight.line.location_y_2(0.057)
+ensight.line.location_x_1(0.91)
+ensight.line.location_y_1(0.14)
+ensight.line.location_x_2(0.82)
+ensight.line.location_y_2(0.14)
 
 
 
@@ -115,7 +115,7 @@ ensight.file.image_window_size("normal")
 ensight.file.image_raytrace_it("ON")
 ensight.file.save_image()
 #
-= --------------------O2------------------------
+# --------------------O2------------------------
 
 #remove vision of the flare
 ensight.part.select_begin(2,3,4,5,6)
