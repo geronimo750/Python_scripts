@@ -1,0 +1,656 @@
+Auto-Transcript Start Time:  11:27:51, 15 Dec 2023 GMT Standard Time 
+Current Directory: "C:\Users\geron-ma\Documents\Python_Scripts\Python-Fluent\Meshing"
+
+              Welcome to ANSYS Fluent 2023 R1
+
+              Copyright 1987-2023 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Nov 28 2022 09:52:02 EST  Build Id: 10208  
+Information: The server has started and is running.
+ 
+Connected License Server List:	1055@headnode1
+Host spawning Node 0 on machine "dgbekbm00421" (win64).
+
+-----------------------------------------------------------------------------------
+ID    Hostname      Core   O.S.         PID    Vendor                             
+-----------------------------------------------------------------------------------
+n15   dgbekbm00421  16/64  Windows-x64  31264  AMD EPYC 7542 32-Core Processor    
+n14   dgbekbm00421  15/64  Windows-x64  29636  AMD EPYC 7542 32-Core Processor    
+n13   dgbekbm00421  14/64  Windows-x64  31260  AMD EPYC 7542 32-Core Processor    
+n12   dgbekbm00421  13/64  Windows-x64  31524  AMD EPYC 7542 32-Core Processor    
+n11   dgbekbm00421  12/64  Windows-x64  14844  AMD EPYC 7542 32-Core Processor    
+n10   dgbekbm00421  11/64  Windows-x64  10436  AMD EPYC 7542 32-Core Processor    
+n9    dgbekbm00421  10/64  Windows-x64  25608  AMD EPYC 7542 32-Core Processor    
+n8    dgbekbm00421  9/64   Windows-x64  18908  AMD EPYC 7542 32-Core Processor    
+n7    dgbekbm00421  8/64   Windows-x64  31600  AMD EPYC 7542 32-Core Processor    
+n6    dgbekbm00421  7/64   Windows-x64  29452  AMD EPYC 7542 32-Core Processor    
+n5    dgbekbm00421  6/64   Windows-x64  31696  AMD EPYC 7542 32-Core Processor    
+n4    dgbekbm00421  5/64   Windows-x64  19644  AMD EPYC 7542 32-Core Processor    
+n3    dgbekbm00421  4/64   Windows-x64  29928  AMD EPYC 7542 32-Core Processor    
+n2    dgbekbm00421  3/64   Windows-x64  27136  AMD EPYC 7542 32-Core Processor    
+n1    dgbekbm00421  2/64   Windows-x64  30116  AMD EPYC 7542 32-Core Processor    
+n0*   dgbekbm00421  1/64   Windows-x64  31768  AMD EPYC 7542 32-Core Processor    
+host  dgbekbm00421         Windows-x64  32524  AMD EPYC 7542 32-Core Processor    
+
+MPI Option Selected: intel
+Selected system interconnect: default
+-----------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\geron-ma\\Documents\\Python_Scripts\\Python-Fluent\\Meshing\\cleanup-fluent-dgbekbm00421-32524.bat
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+
+Meshing> 
+Error: File "C:\Users\geron-ma\OneDrive - TUV SUD\Projects-Files\A4IR9-Solartron\WP3-local\01_Mesh\New-mixer-No-tapping.scdoc" not found.
+Error Object: #f
+
+Error: Error occurred during import.
+Error Object: #f
+
+Error: Importing the selected file(s) could not be completed. Check to make sure that the selected file format is supported. In addition, check to make sure the CAD Readers are properly configured for the format using the CAD Configuration Manager utility.
+Error Object: #f
+(cx-gui-do cx-activate-item "Error*OK")
+
+Error: File "C:\Users\geron-ma\OneDrive - TUV SUD\Projects-Files\A4IR9-Solartron\WP3-local\01_Mesh\New-mixer-No-tapping.scdoc" not found.
+Error Object: #f
+
+Error: Error occurred during import.
+Error Object: #f
+
+Error: Importing the selected file(s) could not be completed. Check to make sure that the selected file format is supported. In addition, check to make sure the CAD Readers are properly configured for the format using the CAD Configuration Manager utility.
+Error Object: #f
+(cx-gui-do cx-activate-item "Error*OK")
+
+Importing one geom object per program-controlled and one zone per body ...
+    C:\\Program Files\\ANSYS Inc\\v231\\commonfiles\\CPython\\3_7\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by geron-ma on dgbekbm00421 winx64 on Fri Dec 15 11:31:16 2023
+    using Python 3.7.13 (remotes/origin/3b89b4a151d5e27a7d119919e370e421549562b8-dirty:3b89b4a1, Sep 23 2) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build Nov 23 2022 18:41:14
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'C:\\Users\\geron-ma\\Documents\\Python_Scripts\\Python-Fluent\\Meshing\\FM_dgbekbm00421_16984/out170263987516984.tgf'
+    converting file 'New-mixer-No-tapping.scdoc' (1 of 1) from Workbench to FLTG using output path 'C:\\Users\\geron-ma\\Documents\\Python_Scripts\\Python-Fluent\\Meshing\\FM_dgbekbm00421_16984'
+    importing data ...
+    importing meshing model from PartMgr from file 'C:/Users/geron-ma/OneDrive - TUV SUD/Projects-Files/A4IR9-Solartron/WP3-local/01_Mesh/New-mixer-No-tapping.scdoc' ...
+    setting enclosure and symmetry processing to False
+    setting transfer named selections to True
+    setting named selection prefixes to ''
+    setting mixed import resolution type to 'SolidAndSurface'
+    setting target application to 'FluentMeshing'
+    attaching to assembly ...
+    attaching to assembly failed after 120.83 [s]
+    running ANSYS TGrid CADToTGridConverter FAILED! (pIPartMgr->AttachAssembly() failed!
+    Unable to start CAD system.
+    Attach failed.
+    
+    importing meshing model from PartMgr from file 'C:\\Users\\geron-ma\\OneDrive - TUV SUD\\Projects-Files\\A4IR9-Solartron\\WP3-local\\01_Mesh\\New-mixer-No-tapping.scdoc' failed.)
+    ran ANSYS TGrid CADToTGridConverter in 120.997 [s]
+        ======== Command Execution Log Manager ========
+        Number of execution logs: 2
+        MeshingModelImportPartMgrExecLog
+            Label = 'ANSYS_MESH_FM_WARNING_ID_MESHINGMODEL_IMPORT_PARTMGR_ERROR'
+    
+        DataTranslatorCommandExecLog
+            Label = 'ANSYS_MESH_FM_ERROR_ID_CONVERT_WORKBENCH_TO_FLTG_ERROR'
+    
+    
+
+Error: Error in CAD Import
+Error Object: #f
+
+Error: Error occurred during import.
+Error Object: #f
+
+Error: Importing the selected file(s) could not be completed. Check to make sure that the selected file format is supported. In addition, check to make sure the CAD Readers are properly configured for the format using the CAD Configuration Manager utility.
+Error Object: #f
+(cx-gui-do cx-activate-item "Error*OK")
+
+Importing one geom object per program-controlled and one zone per body ...
+    C:\\Program Files\\ANSYS Inc\\v231\\commonfiles\\CPython\\3_7\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by geron-ma on dgbekbm00421 winx64 on Fri Dec 15 11:33:30 2023
+    using Python 3.7.13 (remotes/origin/3b89b4a151d5e27a7d119919e370e421549562b8-dirty:3b89b4a1, Sep 23 2) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build Nov 23 2022 18:41:14
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'C:\\Users\\geron-ma\\Documents\\Python_Scripts\\Python-Fluent\\Meshing\\FM_dgbekbm00421_16984/out170264001016984.tgf'
+    converting file 'New-mixer-No-tapping.scdoc' (1 of 1) from Workbench to FLTG using output path 'C:\\Users\\geron-ma\\Documents\\Python_Scripts\\Python-Fluent\\Meshing\\FM_dgbekbm00421_16984'
+    importing data ...
+    importing meshing model from PartMgr from file 'C:/Users/geron-ma/OneDrive - TUV SUD/Projects-Files/A4IR9-Solartron/WP3-local/01_Mesh/New-mixer-No-tapping.scdoc' ...
+    setting enclosure and symmetry processing to False
+    setting transfer named selections to True
+    setting named selection prefixes to ''
+    setting mixed import resolution type to 'SolidAndSurface'
+    setting target application to 'FluentMeshing'
+    attaching to assembly ...
+    attaching to assembly done in 4.086 [s]
+    processing assembly 'C:\\Users\\geron-ma\\OneDrive - TUV SUD\\Projects-Files\\A4IR9-Solartron\\WP3-local\\01_Mesh\\New-mixer-No-tapping.scdoc' with ID 1 and reference key '<?xml version="1.0" encoding="utf-16"?>
+    <IdTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Table>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="bfb1b36e-0ac1-458b-99ac-d2b44b05343d:3491" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="bfb1b36e-0ac1-458b-99ac-d2b44b05343d:3487" /&gt;&lt;/SnippetV1&gt;</Text>
+          <Id>10000</Id>
+          <IsExploded>false</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="bfb1b36e-0ac1-458b-99ac-d2b44b05343d:2" /&gt;</Text>
+          <Id>10001</Id>
+          <IsExploded>false</IsExploded>
+        </Entry>
+      </Table>
+    </IdTable>'
+    length unit = [m]
+    processing part 'Volume' with ID 3
+    processing part 'New-mixer-No-tapping' with ID 5
+    processing named selection 'inlet'
+    processing named selection 'tap1'
+    processing named selection 'tap2'
+    processing named selection 'tap3'
+    processing named selection 'tap4'
+    processing named selection 'tap5'
+    processing named selection 'tap6'
+    processing named selection 'tap7'
+    processing named selection 'tap8'
+    processing named selection 'outlet'
+    processing named selection 'fluid-pipe'
+    processing data ...
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+    detecting feature edges, feature angle = 40 [deg] ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Collection: 11
+                    Component : 3
+                    Body      : 2
+                    Shell     : 2
+                    Face      : 46
+                    Loop      : 53
+                    Edge      : 95
+                    Vertex    : 59
+                    Surface   : 46
+                    Curve     : 95
+                Tessellation summary:
+                    Face facets  : 2266
+                    Edge segments: 1166
+                Bounding box:
+                    (-1000, -113.1327027876504, -137.8300018310547) x (4009.591740512855, 129, 137.8300018310547)
+                Assembly component hierarchy:
+                    'C:\\Users\\geron-ma\\OneDrive - TUV SUD\\Projects-Files\\A4IR9-Solartron\\WP3-local\\01_Mesh\\New-mixer-No-tapping.scdoc'
+                      'Volume'
+                      'New-mixer-No-tapping'
+                NamedCollections:
+                    'inlet'
+                    'tap1'
+                    'tap2'
+                    'tap3'
+                    'tap4'
+                    'tap5'
+                    'tap6'
+                    'tap7'
+                    'tap8'
+                    'outlet'
+                    'fluid-pipe'
+    
+    
+    exporting FLTG data to file 'C:\\Users\\geron-ma\\Documents\\Python_Scripts\\Python-Fluent\\Meshing\\FM_dgbekbm00421_16984\\out170264001016984.tgf' ...
+    writing face-based mesh file 'C:\\Users\\geron-ma\\Documents\\Python_Scripts\\Python-Fluent\\Meshing\\FM_dgbekbm00421_16984\\out170264001016984.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 2
+        Object region: 13
+        Zone         : 24
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 4.251 [s]
+        ======== Command Execution Log Manager ========
+        Number of execution logs: 0
+    
+
+Reading "C:\Users\geron-ma\Documents\Python_Scripts\Python-Fluent\Meshing\FM_dgbekbm00421_16984/out170264001016984.tgf"...
+Reading "C:\Users\geron-ma\Documents\Python_Scripts\Python-Fluent\Meshing\FM_dgbekbm00421_16984/out170264001016984.tgf"...
+nodes: 2047
+edges: 922
+faces: 2254
+cells: 0
+reading 2047 storage data (id 1, type 41, double precision binary).
+generating pointers...done.
+extracting boundary entities...
+ 2047 boundary nodes.
+ 2254 boundary faces.
+ 12 boundary face zones.
+done.
+analyzing boundary connectivity...done.
+
+---------------- Import of New-mixer-No-tapping, consisting of 2 parts/objects, complete. 
+ 
+
+Error: Failed to update task "boi_1" as value(s) for below argument(s) are invalid: 
+
+Argument Name: Face Zone Labels
+Allowed value(s): new-mixer-no-tapping-boi, fluid-pipe, 
+Provided value(s): New-mixer-No-tapping.scdoc-boi, 
+Error Object: #f
+
+Error: state/object/execute-command:Exception encountered in S_ExecuteTask
+Error Object: ()
+(cx-use-window-id 51)
+zone not found.
+
+Error: There is already another task named 'boi_1'. 
+Provide a different name.
+Error Object: #f
+
+Error: state/object/execute-command:Exception encountered in S_AddChildAndUpdate
+Error Object: ()
+(cx-gui-do cx-activate-item "Error*OK")
+(cx-gui-do cx-activate-item "Question*PanelButtons*PushButton2(Cancel)")
+
+---------------- A Body of Influence with a target size of 2 was added to: new-mixer-no-tapping-boi
+Deleting boi_1-0
+
+Error: Failed to update task "boi_1" as value(s) for below argument(s) are invalid: 
+
+Argument Name: Face Zone Labels
+Allowed value(s): new-mixer-no-tapping-boi, fluid-pipe, 
+Provided value(s): New-mixer-No-tapping.scdoc-boi, 
+Error Object: #f
+
+Error: state/object/execute-command:Exception encountered in S_ExecuteTask
+Error Object: ()
+"boi_2 task cannot be completed until the following tasks have been updated: 
+ 
+boi_1
+"
+
+Error: Failed to update task "boi_1" as value(s) for below argument(s) are invalid: 
+
+Argument Name: Face Zone Labels
+Allowed value(s): new-mixer-no-tapping-boi, fluid-pipe, 
+Provided value(s): New-mixer-No-tapping-boi, 
+Error Object: #f
+
+Error: state/object/execute-command:Exception encountered in S_ExecuteTask
+Error Object: ()
+
+---------------- A Body of Influence with a target size of 2 was added to: new-mixer-no-tapping-boi
+Writing "C:\Users\geron-ma\Documents\Python_Scripts\Python-Fluent\Meshing\FM_dgbekbm00421_16984\TaskObject3.msh.h5" ...
+writing 1 node zones
+writing 12 edge zones 
+writing 12 face zones 
+done.    processing size functions/scoped sizing to create Size Field...
+
+Writing "C:\Users\geron-ma\Documents\Python_Scripts\Python-Fluent\Meshing\FM_dgbekbm00421_16984\New-mixer-No-tapping.sf"...
+Writing "C:\Users\geron-ma\Documents\Python_Scripts\Python-Fluent\Meshing\FM_dgbekbm00421_16984\New-mixer-No-tapping.sf"...
+Done.
+
+
+Importing one mesh object per program-controlled and one zone per body ...
+    C:\\Program Files\\ANSYS Inc\\v231\\commonfiles\\CPython\\3_7\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by geron-ma on dgbekbm00421 winx64 on Fri Dec 15 11:51:15 2023
+    using Python 3.7.13 (remotes/origin/3b89b4a151d5e27a7d119919e370e421549562b8-dirty:3b89b4a1, Sep 23 2) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build Nov 23 2022 18:41:14
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'C:\\Users\\geron-ma\\Documents\\Python_Scripts\\Python-Fluent\\Meshing\\FM_dgbekbm00421_16984/out170264107416984.tgf'
+    converting file 'New-mixer-No-tapping.scdoc.pmdb' (1 of 1) from Workbench to FLTG using output path 'C:\\Users\\geron-ma\\Documents\\Python_Scripts\\Python-Fluent\\Meshing\\FM_dgbekbm00421_16984'
+    importing data ...
+    importing meshing model from PartMgr from file 'C:\\Users\\geron-ma\\Documents\\Python_Scripts\\Python-Fluent\\Meshing\\FM_dgbekbm00421_16984\\\\New-mixer-No-tapping.scdoc.pmdb' ...
+    setting enclosure and symmetry processing to False
+    setting transfer named selections to True
+    setting named selection prefixes to ''
+    setting mixed import resolution type to 'SolidAndSurface'
+    setting target application to 'FluentMeshing'
+    initializing part manager from file ...
+    processing assembly 'C:\\Users\\geron-ma\\OneDrive - TUV SUD\\Projects-Files\\A4IR9-Solartron\\WP3-local\\01_Mesh\\New-mixer-No-tapping.scdoc' with ID 1 and reference key '<?xml version="1.0" encoding="utf-16"?>
+    <IdTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Table>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="bfb1b36e-0ac1-458b-99ac-d2b44b05343d:3491" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="bfb1b36e-0ac1-458b-99ac-d2b44b05343d:3487" /&gt;&lt;/SnippetV1&gt;</Text>
+          <Id>10000</Id>
+          <IsExploded>false</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="bfb1b36e-0ac1-458b-99ac-d2b44b05343d:2" /&gt;</Text>
+          <Id>10001</Id>
+          <IsExploded>false</IsExploded>
+        </Entry>
+      </Table>
+    </IdTable>'
+    length unit = [m]
+    processing part 'Volume' with ID 3
+    processing part 'New-mixer-No-tapping' with ID 5
+    processing named selection 'inlet'
+    processing named selection 'tap1'
+    processing named selection 'tap2'
+    processing named selection 'tap3'
+    processing named selection 'tap4'
+    processing named selection 'tap5'
+    processing named selection 'tap6'
+    processing named selection 'tap7'
+    processing named selection 'tap8'
+    processing named selection 'outlet'
+    processing named selection 'fluid-pipe'
+    processing data ...
+    loading size function background grid from file 'C:\\Users\\geron-ma\\Documents\\Python_Scripts\\Python-Fluent\\Meshing\\FM_dgbekbm00421_16984\\\\New-mixer-No-tapping.sf' ...
+    reading size function background grid file 'C:\\Users\\geron-ma\\Documents\\Python_Scripts\\Python-Fluent\\Meshing\\FM_dgbekbm00421_16984\\\\New-mixer-No-tapping.sf' ...
+     Read 2044004 vertices
+    initializing size function background grid done in 1.497 [s]
+    Breakout detected
+    Front could not be closed at be1051 (123.698006 7.958583 61.495615)
+    tessellating 46 faces done in 51.089 [s]
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+    detecting feature edges, feature angle = 40 [deg] ...
+    feature edge angle analysis for 95 edges done in 1.055 [s]
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Collection: 11
+                    Component : 3
+                    Body      : 2
+                    Shell     : 2
+                    Face      : 46
+                    Loop      : 53
+                    Edge      : 95
+                    Vertex    : 59
+                    Surface   : 46
+                    Curve     : 95
+                Tessellation summary:
+                    Face facets  : 2505860
+                    Edge segments: 13278
+                Bounding box:
+                    (-1000, -113.1327056884766, -137.8300018310547) x (4009.591796875, 129, 137.8300018310547)
+                Assembly component hierarchy:
+                    'C:\\Users\\geron-ma\\OneDrive - TUV SUD\\Projects-Files\\A4IR9-Solartron\\WP3-local\\01_Mesh\\New-mixer-No-tapping.scdoc'
+                      'Volume'
+                      'New-mixer-No-tapping'
+                NamedCollections:
+                    'inlet'
+                    'tap1'
+                    'tap2'
+                    'tap3'
+                    'tap4'
+                    'tap5'
+                    'tap6'
+                    'tap7'
+                    'tap8'
+                    'outlet'
+                    'fluid-pipe'
+    
+    
+    exporting FLTG data to file 'C:\\Users\\geron-ma\\Documents\\Python_Scripts\\Python-Fluent\\Meshing\\FM_dgbekbm00421_16984\\out170264107416984.tgf' ...
+    zone setup for 27 zones done in 1.201 [s]
+    writing face-based mesh file 'C:\\Users\\geron-ma\\Documents\\Python_Scripts\\Python-Fluent\\Meshing\\FM_dgbekbm00421_16984\\out170264107416984.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 2
+        Object region: 14
+        Zone         : 26
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 56.392 [s]
+        ======== Command Execution Log Manager ========
+        Number of execution logs: 1
+        MeshingModelCommandExecLog
+            Label = 'ANSYS_MESH_FM_WARNING_ID_MESHINGMODEL_TESSELLATION_CREATION_ENTITIES_WHERE_CONFORMAL_TESSELLATION_FAILED'
+            EntityIDs = (314)
+            Points = ()
+    
+    
+
+Reading "C:\Users\geron-ma\Documents\Python_Scripts\Python-Fluent\Meshing\FM_dgbekbm00421_16984/out170264107416984.tgf"...
+Reading "C:\Users\geron-ma\Documents\Python_Scripts\Python-Fluent\Meshing\FM_dgbekbm00421_16984/out170264107416984.tgf"...
+nodes: 1261699
+edges: 8538
+faces: 2505860
+cells: 0
+reading 1261699 storage data (id 1, type 41, double precision binary).
+appending mesh...
+done.
+generating pointers...done.
+extracting boundary entities...
+ 1263746 boundary nodes.
+ 2508114 boundary faces.
+ 25 boundary face zones.
+done.
+
+Reading "C:\Users\geron-ma\Documents\Python_Scripts\Python-Fluent\Meshing\FM_dgbekbm00421_16984\\New-mixer-No-tapping.sf"...
+Reading "C:\Users\geron-ma\Documents\Python_Scripts\Python-Fluent\Meshing\FM_dgbekbm00421_16984\\New-mixer-No-tapping.sf"...
+ Read 2044004 vertices
+Warning: Deleting empty objects (new-mixer-no-tapping-boi)
+
+removed 1818492 faces.
+32 boundary nodes.
+0 faces removed.
+Deleted 0 faces with 3 free edges.
+Deleted 0 faces with 2 free edges.
+Deleted 0 faces with 3 free edges.
+Deleted 0 faces with 2 free edges.
+0 faces marked.
+
+    computing regions...done
+Deleting import_curvature_0
+Deleting import_proximity_0
+    processing size functions/scoped sizing to create Size Field...
+
+Writing "C:\Users\geron-ma\Documents\Python_Scripts\Python-Fluent\Meshing\FM_dgbekbm00421_16984\New-mixer-No-tapping.sf"...
+Writing "C:\Users\geron-ma\Documents\Python_Scripts\Python-Fluent\Meshing\FM_dgbekbm00421_16984\New-mixer-No-tapping.sf"...
+Done.
+
+
+remeshing...
+
+
+------------------------- --------------------- -------------------- ---------------- ----------
+                     name skewed-cells (> 0.80)    averaged-skewness maximum-skewness face count
+------------------------- --------------------- -------------------- ---------------- ----------
+
+               fluid-pipe                     0         0.0066600477       0.75538489     684540
+------------------------- --------------------- -------------------- ---------------- ----------
+                     name skewed-cells (> 0.80)    averaged-skewness maximum-skewness face count
+------------------------- --------------------- -------------------- ---------------- ----------
+
+             volume-fluid                     0         0.0066600477       0.75538489     684540
+
+---------------- After Surface mesh, the model consists of 1 fluid/solid regions and 0 voids.
+
+---------------- Surface Meshing of New-mixer-No-tapping complete in  3.25 minutes, with a maximum skewness of  0.76. 
+
+---- Warning--- During Surface mesh, failed faces were identified and automatically repaired.
+
+---------------- Velocity-inlet zone type was automatically assigned to zones containing the string 'inlet'.
+
+---------------- Pressure-outlet zone type was automatically assigned to zones containing the string 'outlet'.
+
+---------------- Boundary Conditions Updated
+
+---------------- Regions Updated
+
+Created Scoped Prism: smooth-transition_1
+
+---------------- Inflation control added to volume-fluid
+Writing "C:\Users\geron-ma\Documents\Python_Scripts\Python-Fluent\Meshing\FM_dgbekbm00421_16984\TaskObject11.msh.h5" ...
+writing 3 node zones
+writing 25 edge zones 
+writing 23 face zones 
+done.    processing size functions/scoped sizing to create Size Field...
+
+Writing "C:\Users\geron-ma\Documents\Python_Scripts\Python-Fluent\Meshing\FM_dgbekbm00421_16984\New-mixer-No-tapping.sf"...
+Writing "C:\Users\geron-ma\Documents\Python_Scripts\Python-Fluent\Meshing\FM_dgbekbm00421_16984\New-mixer-No-tapping.sf"...
+Done.
+
+
+    updating regions...
+    done.
+checking object "volume-fluid"...
+    skipping validating regions of mesh object "volume-fluid"...done.    the existing Size Field will be used.
+
+auto meshing object volume-fluid...
+
+processing scoped prisms...
+    starting orientation...done.
+    setting prism growth...done.
+done.
+Identifying Topology...
+
+Generating Prisms...
+
+Generating initial mesh...
+.
+
+    the existing Size Field will be used.
+
+Refining mesh...
+
+Create polyhedra ...
+.
+
+.
+
+.
+
+.
+
+.
+
+
+Merging Domains...
+done.
+
+Quality Measure has been changed to Orthogonal Quality.
+                     name       id cells (quality < 0.10)  minimum quality cell count
+------------------------- -------- ---------------------- ---------------- ----------
+               fluid-pipe     1833                      0       0.14436825    8083559
+
+                     name       id cells (quality < 0.10)  minimum quality cell count
+------------------------- -------- ---------------------- ---------------- ----------
+          Overall Summary     none                      0       0.14436825    8083559
+
+Total Number of Cell Zones : 1
+
+[Quality Measure : Orthogonal Quality]
+
+---------------- 8083559 cells were created in : 15.40 minutes
+
+---------------- The mesh has a minimum Orthogonal Quality of:  0.14 
+
+---------------- The volume meshing of volume-fluid is complete.
+
+(cx-use-window-id 51)
+Writing "C:\Users\geron-ma\Documents\Python_Scripts\Python-Fluent\Meshing\FM_dgbekbm00421_16984\TaskObject14.msh.h5" ...
+writing 4 node zones
+writing 13 edge zones 
+writing 12 face zones 
+writing 1 cell zones 
+done.
+                     name       id cells (quality < 0.10)  minimum quality cell count
+------------------------- -------- ---------------------- ---------------- ----------
+               fluid-pipe     1833                      0       0.19165006    8083559
+
+                     name       id cells (quality < 0.10)  minimum quality cell count
+------------------------- -------- ---------------------- ---------------- ----------
+          Overall Summary     none                      0       0.19165006    8083559
+
+Total Number of Cell Zones : 1
+
+[Quality Measure : Orthogonal Quality]
+
+---------------- Volume Quality improvement of volume-fluid complete in :  0.43 minutes. The final minimum Orthogonal Quality is 0.192 
+
+(cx-use-window-id 51)
+(cx-set-camera-relative '(19.8945 -140.238 136.833) '(0 0 0) '(0.0988029 0.121712 0.109995) 0 0)
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Mesh...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "New-mixer-No-tapping.msh.h5") "CFF Mesh Files (*.msh.h5 )")
+Writing "C:/Users/geron-ma/OneDrive - TUV SUD/Projects-Files/A4IR9-Solartron/WP3-local/01_Mesh/New-mixer-No-tapping.msh.h5" ...
+writing 4 node zones
+writing 13 edge zones 
+writing 12 face zones 
+writing 1 cell zones 
+done.Copying the required intermediate mesh files into C:\\Users\\geron-ma\\OneDrive - TUV SUD\\Projects-Files\\A4IR9-Solartron\\WP3-local\\01_Mesh\\New-mixer-No-tapping_workflow_files
+Done.
+(cx-gui-do cx-activate-item "Ribbon*Frame1*Frame2(Task Page)*Table1*Table3(Solution)*PushButton1(Switch to Solution)")
+(cx-gui-do cx-activate-item "Question*OK")
+
+Preparing...
+
+Multicore processors detected. Processor affinity set!
+
+Transferring mesh
+	transferring nodes... done
+	creating threads... done
+	transferring faces... done
+	transferring cells... done
+	updating face to cell connectivity... done
+	updating grid metrics...  done
+	post mesh transfer operations... done
+done
+
+     materials,
+Loading material properties database...
+
+     interface,
+     domains,
+     zones,
+	inlet
+	outlet
+	tap6
+	tap7
+	tap5
+	tap3
+	tap8
+	tap4
+	tap1
+	tap2
+	fluid-pipe:1
+	interior--fluid-pipe
+	fluid-pipe
+     surfaces,
+     parallel,
+Done.
+Mesh is now scaled to meters.
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)
+(newline)
+
+
+> (cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Case...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "New-mixer-No-tapping.cas.h5") "CFF Case Files (*.cas.h5 )")
+Fast-loading "C:\PROGRA~1\ANSYSI~1\v231\fluent\fluent23.1.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Writing to dgbekbm00421:"C:/Users/geron-ma/OneDrive - TUV SUD/Projects-Files/A4IR9-Solartron/WP3-local/01_Mesh/New-mixer-No-tapping.cas.h5" in NODE0 mode and compression level 1 ...
+Grouping cells for Laplace smoothing ...
+     8083559 cells,     1 zone  ...
+    49675305 faces,    12 zones ...
+    37841844 nodes,     1 zone  ...
+  Done.
+
+  Writing boundary layer flags ...
+  Done.
+Done.
+(cx-gui-do cx-activate-item "MenuBar*FileMenu*Exit")
+Shutting down Server...
+Services Shutdown...Done.
+Server Shutdown...Done.
+Queue Cleared...Done.
+Shutdown Complete.
+Auto-Transcript Stop Time:  12:37:38, 15 Dec 2023 GMT Standard Time 
+Total Transcript Time: 1 Hour 9 Minute 47 Second.
