@@ -1,0 +1,46 @@
+Auto-Transcript Start Time:  12:12:50, 31 Jan 2024 GMT Standard Time 
+Current Directory: "C:\Users\geron-ma\Documents\Python_scripts\Python-Fluent\Ensight"
+
+              Welcome to ANSYS Fluent 2023 R1
+
+              Copyright 1987-2023 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Nov 28 2022 09:52:02 EST  Build Id: 10208  
+Information: The server has started and is running.
+ 
+Connected License Server List:	1055@headnode1
+
+*********************************************
+Info: Your license enables 4-way parallel execution.
+For faster simulations, please start the application with the appropriate parallel options.
+*********************************************
+
+Host spawning Node 0 on machine "MGBEKBS30503" (win64).
+
+------------------------------------------------------------------------------------------
+ID    Hostname      Core  O.S.         PID    Vendor                                     
+------------------------------------------------------------------------------------------
+n0    MGBEKBS30503  1/12  Windows-x64  12616  AMD Ryzen 5 PRO 5650U with Radeon Graphics 
+host  MGBEKBS30503        Windows-x64  23732  AMD Ryzen 5 PRO 5650U with Radeon Graphics 
+
+MPI Option Selected: intel
+------------------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\geron-ma\\Documents\\Python_scripts\\Python-Fluent\\Ensight\\cleanup-fluent-MGBEKBS30503-23732.bat
+
+Posting ANSYS Product Improvement Program startup data
+Done.
+
+> 
+Posting ANSYS Product Improvement Program performance data 
+Done.
+Shutting down Server...
+Services Shutdown...Done.
+Server Shutdown...Done.
+Queue Cleared...Done.
+Shutdown Complete.
+Auto-Transcript Stop Time:  12:38:57, 31 Jan 2024 GMT Standard Time 
+Total Transcript Time: 26 Minute 7 Second.
